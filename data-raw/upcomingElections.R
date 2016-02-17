@@ -26,8 +26,11 @@ for (i in 1:9){
   webElem$clickElement()                          # Click searchID
 }
 
-upcoming <- upcoming[!duplicated(upcoming)]       # Delete duplicates
-upcoming <- do.call(rbind.data.frame, upcoming)   # Reshape into data.frame
-upcomingElections <- upcoming[, -1]               # Delete blank column and rename
+upcoming <- upcoming[!duplicated(upcoming)]               # Delete duplicates
+upcoming <- do.call(rbind.data.frame, upcoming)           # Reshape into data.frame
+upcomingElections <- upcoming[, -1]                       # Delete blank column and rename
+upcomingElections$Date <- as.Date(upcomingElections$Date) # Reshape to date
+upcomingElections$ElectionYear <- format(upcomingElections$Date, "%Y")
 
-use_data(upcomingElections)
+# Save data
+use_data(upcomingElections, overwrite = T)
