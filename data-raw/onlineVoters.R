@@ -17,7 +17,7 @@ intPenCast <- dcast(internetPenetration, country ~ year,
 onlineVoters <- merge(upcomingElections, intPenCast, by.x = "Country", by.y = "country")
 
 # Check unique countries
-check <- data.frame(table(merged$Country))
+check <- data.frame(table(onlineVoters$Country))
 check <- subset(check, Freq > 0)
 
 # Mismatched country name fix
@@ -25,6 +25,6 @@ fix.1 <- upcomingElections[upcomingElections["Country"] == "Cape Verde",]
 fix.2 <- intPenCast[intPenCast["country"] == "Cabo Verde", ]
 fix.3 <- cbind(fix.1, fix.2[, -1])
 
-onlineVoters <- rbind(merged, fix.3)
+onlineVoters <- rbind(onlineVoters, fix.3)
 
-use_data(onlineVoters)
+use_data(onlineVoters, overwrite = T)
