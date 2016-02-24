@@ -1,2 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^images$
+^data-raw$
+^cran-comments\.md$
+^NEWS\.md$
