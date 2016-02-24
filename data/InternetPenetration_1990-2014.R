@@ -1,4 +1,4 @@
-load("data/WorldMap-InternetPenetration.Rda")
+load("WorldMap-InternetPenetration.Rda")
 library(ggplot2)
 library(maps)
 library(ggmap)
@@ -10,6 +10,6 @@ mean_check <- function(x, y) {
   return(z)
 }
 
-
-# Loop through all years and store image in list
-a <- lapply(1990:2014, ggplot_intpen, data = WorldMapInternetPenetration)
+# Uncomment below to obtain gradient maps for all years
+# # Loop through all years and store image in list
+# a <- lapply(1990:2014, ggplot_intpen, data = WorldMapInternetPenetration)
