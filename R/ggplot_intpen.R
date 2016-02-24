@@ -1,3 +1,20 @@
+#' Plot Internet Penetration Data by Country and Year
+#'
+#' Plot data from the World Bank's World Development Indicators on a
+#' geom_polygon representation of the countries of the world.
+#'
+#' @param data1 use the default database, WorldMapInternetPenetration, for
+#'   Internet penetration data
+#' @param year the year to plot
+#' @param gradient.low the lowest color value for country and legend fill
+#' @param gradient.high the highest color value for country and legend fill
+#' @import ggplot
+#' @import scales percent_format
+#' @return a ggplot object
+#' @export
+#'
+#' @examples
+#' ggplot_intpen(year = 2014)
 ggplot_intpen <- function(data1 = WorldMapInternetPenetration,
                           year = 2014,
                           gradient.low = "white",
