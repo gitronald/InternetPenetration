@@ -15,8 +15,8 @@
 #'
 #' @examples
 #' ggplot_intpen(year = 2014)
-ggplot_intpen <- function(data1 = WorldMapInternetPenetration,
-                          year = 2014,
+ggplot_intpen <- function(year = 2014,
+                          data1 = WorldMapInternetPenetration,
                           gradient.low = "white",
                           gradient.high = "#649AF1") {
 
