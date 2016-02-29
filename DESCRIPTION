@@ -1,6 +1,6 @@
 Package: InternetPenetration
 Title: World Bank Internet Penetration Data on Customizable World Map
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person(c("Ronald", "E."), "Robertson", email = "rrobertson@aibrt.org", role = c("aut", "cre"))
 Description: This package was created to connect the user to the World Bank's World Development Indicators
   [WDI] API, download a subset of WDI data for Internet penetration, and then reshape and plot it as a
