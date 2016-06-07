@@ -8,8 +8,8 @@
 #' @param year the year to plot
 #' @param gradient.low the lowest color value for country and legend fill
 #' @param gradient.high the highest color value for country and legend fill
-#' @import ggplot
-#' @import scales percent_format
+#' @import ggplot2
+#' @import scales
 #' @return a ggplot object
 #' @export
 #'

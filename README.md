@@ -15,5 +15,4 @@ Select year and plot Internet penetration:
 ```
 ggplot_intpen(2014)
 ggplot_intpen(2013)
-
 ```
