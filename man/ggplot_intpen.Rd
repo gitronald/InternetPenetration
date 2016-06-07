@@ -4,14 +4,14 @@
 \alias{ggplot_intpen}
 \title{Plot Internet Penetration Data by Country and Year}
 \usage{
-ggplot_intpen(data1 = WorldMapInternetPenetration, year = 2014,
+ggplot_intpen(year = 2014, data1 = WorldMapInternetPenetration,
   gradient.low = "white", gradient.high = "#649AF1")
 }
 \arguments{
+\item{year}{the year to plot}
+
 \item{data1}{use the default database, WorldMapInternetPenetration, for
 Internet penetration data}
-
-\item{year}{the year to plot}
 
 \item{gradient.low}{the lowest color value for country and legend fill}
 

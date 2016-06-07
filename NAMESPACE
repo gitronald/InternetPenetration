@@ -2,6 +2,5 @@
 
 export(detect_merge_mismatch)
 export(ggplot_intpen)
-import(ggplot)
-import(percent_format)
+import(ggplot2)
 import(scales)
